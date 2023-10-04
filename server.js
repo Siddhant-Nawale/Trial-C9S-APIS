@@ -20,7 +20,7 @@ app.get('/BasicBarChartData',(req,res)=>{
     res.json(data.BasicChart)
 })
 
-app.get('/BasicLineChData',(req,res)=>{
+app.get('/BasicLineChartData',(req,res)=>{
     res.json(data.Basicline)
 })
 
