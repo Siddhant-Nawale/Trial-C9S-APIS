@@ -10,15 +10,15 @@ app.get('/',(req,res)=>{
     res.send("Hii there,<br>This an api made for practice")
 })
 
-app.get('/BasicChartData',(req,res)=>{
+app.get('/BasicBarChartData',(req,res)=>{
     res.json(data.BasicChart)
 })
 
-app.get('/BasicLineData',(req,res)=>{
+app.get('/BasicLineChData',(req,res)=>{
     res.json(data.Basicline)
 })
 
-app.get('/BasicPieData',(req,res)=>{
+app.get('/BasicPieChartData',(req,res)=>{
     res.json(data.BasicPie)
 })
 
