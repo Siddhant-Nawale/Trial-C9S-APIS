@@ -6,6 +6,12 @@ const PORT = process.env.PORT || 5000
 
 const data = require('./Data')
 
+app.use((req, res, next) => {
+    res.header({"Access-Control-Allow-Origin": "*"});
+    next();
+  }) 
+
+
 app.get('/',(req,res)=>{
     res.send("Hii there,<br>This an api made for practice")
 })
