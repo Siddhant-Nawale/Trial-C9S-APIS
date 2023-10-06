@@ -208,15 +208,15 @@ const NegativeValueBarChartData = {
           formatter: '{b}'
         },
         data: [
-          { value: -0.07, label: labelRight },
-          { value: -0.09, label: labelRight },
+          { value: -0.07, label: "labelRight" },
+          { value: -0.09, label: "labelRight" },
           0.2,
           0.44,
-          { value: -0.23, label: labelRight },
+          { value: -0.23, label: "labelRight" },
           0.08,
-          { value: -0.17, label: labelRight },
+          { value: -0.17, label: "labelRight" },
           0.47,
-          { value: -0.36, label: labelRight },
+          { value: -0.36, label: "labelRight" },
           0.18
         ]
       }
