@@ -24,7 +24,27 @@ app.use((req, res, next) => {
 
 
 app.get('/',(req,res)=>{
-    res.send("Hii there,<br>This an api made for practice")
+    res.send(`Hii there,<br>This an api made for practice
+    <br/>
+    Available APIS :<br/>
+    <a href="https://trial-express-render-deployment.onrender.com/BasicBarChartData">https://trial-express-render-deployment.onrender.com/BasicBarChartData</a>
+    <br/>
+    <a href = "https://trial-express-render-deployment.onrender.com/StackedHorizontalBarChartData">https://trial-express-render-deployment.onrender.com/StackedHorizontalBarChartData</a>
+    <br/>
+    <a href = "https://trial-express-render-deployment.onrender.com/WaterfallBarChartData">https://trial-express-render-deployment.onrender.com/WaterfallBarChartData</a>
+    <br/>
+    <a href="https://trial-express-render-deployment.onrender.com/NegativeValueBarChartData">https://trial-express-render-deployment.onrender.com/NegativeValueBarChartData</a>
+    <br/>
+    <a href="https://trial-express-render-deployment.onrender.com/BasicLineChartData">https://trial-express-render-deployment.onrender.com/BasicLineChartData</a>
+    <br/>
+    <a href="https://trial-express-render-deployment.onrender.com/StackedHorizontalBarChartData">https://trial-express-render-deployment.onrender.com/StackedHorizontalBarChartData</a>
+    <br/>
+    <a href = "https://trial-express-render-deployment.onrender.com/WaterfallBarChartData">https://trial-express-render-deployment.onrender.com/WaterfallBarChartData</a>
+    <br/>
+    <a href = "https://trial-express-render-deployment.onrender.com/BasicPieChartData">https://trial-express-render-deployment.onrender.com/BasicPieChartData</a>
+    <br/>
+    <a href = "https://trial-express-render-deployment.onrender.com/DoughnutPieChartData">https://trial-express-render-deployment.onrender.com/DoughnutPieChartData</a>
+    `)
 })
 
 
