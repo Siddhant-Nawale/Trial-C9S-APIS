@@ -10,6 +10,12 @@ const BarChartData = require('./BarChartData')
 const LineChatData = require('./LineChartData')
 const PieChartData = require('./PieChartData')
 
+// app._router.stack.forEach(function (r) {
+//     if (r.route && r.route.path) {
+//       console.log(r.route.path)
+//     }
+//   });
+
 
 app.use((req, res, next) => {
     res.header({"Access-Control-Allow-Origin": "*"});
@@ -41,7 +47,7 @@ app.get('/NegativeValueBarChartData',(req,res)=>{
 })
 
 
-app.get('/BasicBarChartData',(req,res)=>{
+app.get('/BasicLineChartData',(req,res)=>{
     res.json(LineChatData.BasicLineData)
 })
 
