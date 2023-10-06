@@ -4,7 +4,12 @@ const app = express()
 const PORT = process.env.PORT || 5000
 
 
-const data = require('./Data')
+
+
+const BarChartData = require('./BarChartData')
+const LineChatData = require('./LineChartData')
+const PieChartData = require('./PieChartData')
+
 
 app.use((req, res, next) => {
     res.header({"Access-Control-Allow-Origin": "*"});
@@ -16,16 +21,49 @@ app.get('/',(req,res)=>{
     res.send("Hii there,<br>This an api made for practice")
 })
 
+
 app.get('/BasicBarChartData',(req,res)=>{
-    res.json(data.BasicChart)
+    res.json(BarChartData.BasicBarChartData)
 })
 
-app.get('/BasicLineChartData',(req,res)=>{
-    res.json(data.Basicline)
+
+app.get('/StackedHorizontalBarChartData',(req,res)=>{
+    res.json(BarChartData.StackedHorizontalBarChartData)
 })
+
+
+app.get('/WaterfallBarChartData',(req,res)=>{
+    res.json(BarChartData.WaterfallBarChartData)
+})
+
+app.get('/NegativeValueBarChartData',(req,res)=>{
+    res.json(BarChartData.NegativeValueBarChartData)
+})
+
+
+app.get('/BasicBarChartData',(req,res)=>{
+    res.json(LineChatData.BasicLineData)
+})
+
+
+app.get('/StackedHorizontalBarChartData',(req,res)=>{
+    res.json(LineChatData.StackedAreaData)
+})
+
+
+app.get('/WaterfallBarChartData',(req,res)=>{
+    res.json(LineChatData.StackedLineData)
+})
+
+
 
 app.get('/BasicPieChartData',(req,res)=>{
-    res.json(data.BasicPie)
+    res.json(PieChartData.BasicPieChartData)
+})
+
+
+app.get('/DoughnutPieChartData',(req,res)=>{
+    res.json(PieChartData.DoughnutPieChartData)
 })
 
 
