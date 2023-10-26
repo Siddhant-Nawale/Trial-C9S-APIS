@@ -1,12 +1,13 @@
 const express = require('express')
 const app = express()
+var AccessControl = require('express-ip-access-control');
 
 const PORT = process.env.PORT || 5000
 
 
 
-
-const BarChartData = require('./BarChartData')
+const BarChartData = require('./BarChartData');
+const { options } = require('./IPControl');
 const LineChatData = require('./LineChartData')
 const PieChartData = require('./PieChartData')
 
@@ -15,6 +16,8 @@ const PieChartData = require('./PieChartData')
 //       console.log(r.route.path)
 //     }
 //   });
+
+app.use(AccessControl(options));
 
 
 app.use((req, res, next) => {
