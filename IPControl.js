@@ -1,5 +1,6 @@
 var ipList = [
 	'::21',
+    '192.168.56.1'
 ]
 // mode: 'allow','deny'
 var options = {
