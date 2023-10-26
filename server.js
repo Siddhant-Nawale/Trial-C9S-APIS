@@ -17,13 +17,13 @@ const PieChartData = require('./PieChartData')
 //     }
 //   });
 
-app.use(AccessControl(options));
 
 
 app.use((req, res, next) => {
     res.header({"Access-Control-Allow-Origin": "*"});
     next();
   }) 
+  app.use(AccessControl(options));
 
 
 app.get('/',(req,res)=>{

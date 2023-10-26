@@ -1,5 +1,5 @@
 var ipList = [
-	'::1',
+	'::21',
 ]
 // mode: 'allow','deny'
 var options = {
@@ -14,3 +14,8 @@ var options = {
 	redirectTo: '',
 	message: 'Unauthorized'
 };
+
+
+module.exports= {
+    ipList,options
+}
