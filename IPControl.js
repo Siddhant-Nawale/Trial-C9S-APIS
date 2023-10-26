@@ -1,8 +1,8 @@
-export var ipList = [
+var ipList = [
 	'::1',
 ]
 // mode: 'allow','deny'
-export var options = {
+var options = {
 	mode: 'allow',
 	denys: [],
 	allows: ipList,
