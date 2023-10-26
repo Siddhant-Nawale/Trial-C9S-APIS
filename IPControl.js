@@ -4,9 +4,9 @@ var ipList = [
 ]
 // mode: 'allow','deny'
 var options = {
-	mode: 'allow',
+	mode: 'deny',
 	denys: [],
-	allows: ipList,
+	allows: [],
 	forceConnectionAddress: false,
 	log: function(clientIp, access) {
 		console.log(clientIp + (access ? ' accessed.' : ' denied.'));
